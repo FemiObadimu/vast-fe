@@ -30,7 +30,7 @@ const BlogState = (props) => {
 
     try {
       const resp = await axios.post(
-        "https://vastio.netlify.app/api/v1/blog/post",
+        "https://vastblog.onrender.com/api/v1/blog/post",
         formData,
         config
       );
@@ -55,7 +55,7 @@ const BlogState = (props) => {
 
     try {
       const resp = await axios.get(
-        `https://vastio.netlify.app/api/v1/blog/${id}`,
+        `https://vastblog.onrender.com/api/v1/blog/${id}`,
         config
       );
       dispatch({
@@ -79,7 +79,7 @@ const BlogState = (props) => {
 
     try {
       const resp = await axios.get(
-        "https://vastio.netlify.app/api/v1/blog/all",
+        "https://vastblog.onrender.com/api/v1/blog/all",
         config
       );
       dispatch({
